@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   html{
+    scroll-behavior: smooth;
+   }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English জানালা </title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-      /F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div id="nav" class=" opacity-80 fixed bg-gray-300 hidden  z-50 w-full ">
+           <div class="flex justify-between  max-w-screen-xl mx-auto bg-gray-300 p-2 ">
+            <div class="flex">
+              <h2 class="font-bold pt-1">English</h2>
+              <img class="w-8" src="assets/logo.png"  alt="">
+              <h1 class="pt-1">জানালা</h1>
+            </div>
+            <div class="">
+              <a href="#section2"><button class="p-1 px-2 mx-1 border border-blue-800 rounded-sm hover:bg-blue-800 hover:cursor-pointer font-semibold 
+              text-blue-800 hover:text-white transition-all "><i class="mr-1 fa-solid fa-circle-question"></i>FAQ</button></a>
+
+              <a href="#section1"><button class="p-1   font-semibold text-blue-800 border-blue-800 px-2 mx-1 border rounded-sm 
+              hover:bg-blue-800 hover:cursor-pointer hover:text-white transition-all"><i class="fa-solid fa-school mr-1"></i>Learn</button></a>
+
+              <button onclick="loginClicked()" class="p-1 font-semibold text-blue-800 border-blue-800 px-2 mx-1 border rounded-sm 
+              hover:bg-blue-800 hover:cursor-pointer hover:text-white transition-all"><i class="fa-solid fa-right-from-bracket mr-1"></i>Logout</button>
+            </div>
+          </div> 
+        </div>
+        
+    </header>
+   
+    <main>
+        <!-- Banner sectionn design -->
+        <section id="banner">
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="assets/hero-student.png"
+                    class="max-w-sm" />
+                  <div>
+                    <h1 class="text-4xl font-bold"><span class="text-blue-400">English</span> is Easy!!</h1>
+                    <p class="py-6">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের 
+                        Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                    </p>
+    
+                    <input id="name" class="p-1" placeholder="Enter Your Name" type="text" required><br><br>
+
+                    <input id="password" class="p-1" placeholder="Enter Your Password"  type="password" required><br><br>
+                    <button onclick="getStart()" id="btn" class="btn btn-soft btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- cart section design -->
+
+         <section  id="section1" class="max-w-screen-xl mx-auto">
+          <section id="container1" class="mb-10 hidden">
+            <div>
+              <h1 class="font-bold text-2xl text-center"><span class="text-blue-500">Let's</span> Learn Vocabularies</h1>
+            <div id="container-button" class="flex mt-5 justify-center">
+
+            </div>
+            </div>
+            <section  id="word-container" class="grid grid-cols-3 gap-4 mt-5 max-w-screen-xl mx-auto hidden">
+
+            </section>
+            
+         
+         <section id="selection" class="mt-8">
+          <div id="no-select" class="bg-gray-200 text-center p-8 rounded-xl">
+              <p class="text-sm pt-6">আপনি এখনো কোন Lesson Select করেন</p>
+              <h1 class="text-2xl py-3 font-bold">একটি Lesson Select করুন।</h1>
+          </div>
+       </section>
+          </section>
+            
+         
+        
+            
+        <!-- lession show section -->
+         
+            <!-- Frequently Ask section -->
+          <section id="section2" class="">
+            <div id="container2" class="hidden mt-96">
+              <h1 class="text-center font-bold text-2xl mb-5"><span class="text-blue-400">Frequently</span>  Asked Questions</h1>
+
+            <div class="collapse collapse-plus bg-base-100 border border-base-300 my-3">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">How can I start learning English on this website?</div>
+                <div class="collapse-content text-sm">You can start by exploring our beginner lessons, interactive exercises, and 
+                    quizzes. We also offer structured courses to guide you step by step.</div>
+              </div>
+              <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">Is this website free to use?</div>
+                <div class="collapse-content text-sm">Yes. This website always open for free use.</div>
+              </div>
+              <div class="collapse collapse-plus bg-base-100 border border-base-300 my-3">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">3.  Do I need to create an account?</div>
+                <div class="collapse-content text-sm">Yes, You need to create a new account for this course acces.</div>
+              </div>
+              <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">4.How can I build my English vocabulary?</div>
+                <div class="collapse-content text-sm">You need to learn everyday new word.</div>
+              </div>
+              <div class="collapse collapse-plus bg-base-100 border border-base-300 my-3">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
+                <div class="collapse-content text-sm">Yes. We provide a certificate after completation this courses.</div>
+              </div>
+            </div>
+            
+          </section>
+        </section>
+        
+         
+    </main>
+
+    <footer class="mt-28 mb-5    border-t-2 border-pink-300 pt-16">
+        <section class="flex justify-between max-w-screen-xl mx-auto">
+          <div>
+            <div class="flex mb-3">
+            <h2 class="font-bold pt-1">English</h2>
+            <img class="w-8" src="assets/logo.png"  alt="">
+            <h1 class="pt-1">জানালা</h1>
+          </div>
+          <h5 class="my-2">ইংরেজি শিখুন সহজে</h5>
+          <p>Providing ED-Tech Applications since 2025</p>
+          </div>
+          
+            <div class="">
+              <h4>Follow us</h4>
+              <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-youtube px-3"></i><i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+    </footer>
+</body>  
+
+<script src="script.js"></script>
+</html> 
